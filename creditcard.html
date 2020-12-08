@@ -1,0 +1,82 @@
+<body>
+    <header class="header">
+    <h1 id="title" class="cent"> Home Owners Survey Form </h1>
+  
+    <p id="description" class="italic cent">Kindly complete this form and give some information about the type of home or apartment you would like to have.</p><br>
+    
+    <div class="form">
+    
+      <form id="survey-form">
+        <label for="name" id="name-label" class="label"> Name<br>
+          <input id="name" type="text" class="input" required placeholder="Enter your name">
+        </label><br>
+      
+        <label for="email" id="email-label" class="label"> Email<br>
+          <input id="email" type="email" class="input" required placeholder="Enter valid email address">
+        </label><br>
+      
+        <label for="age" id="number-label" class="label">Age (between 18 and 70)<br>
+          <input id="number" type="number" class="input" min="18" max="70" placeholder="Age">
+        </label><br>
+      
+        <label for="phone" id="phone-label" class="label">Phone number:<br>
+          <input id="phone" class="input" type="tel"> 
+        </label><br>
+            
+             
+        <label for="building-type" class="label"> What type of building do you want?<br>
+          <select id="building-type-label" class="input" name="building-type">
+            <option value="" disabled selected hidden>Select building type</option>
+            <option value="bungalow">Bungalow</option>
+            <option value="terrace">Terrace</option>
+            <option value="duplex">Duplex</option>
+            <option value="twin duplex">Twin Duplex</option>
+            <option value="apartment block">Apartment Block</option>
+          </select>
+        </label><br>
+        
+        <label for="Room-number" class="label">How many bedrooms should your building have?<br>
+          <select id="dropdown" class="input" name="bedroom-number">
+            <option value="" disabled selected hidden >Select room number</option>          
+            <option value="2bed">2 Bedrooms</option>
+            <option value="3bed">3 Bedrooms</option>
+            <option value="4bed">4 Bedrooms</option>
+            <option value="5bed">5 Bedrooms</option>
+          </select>
+        </label><br>
+      
+          
+        <legend class="label">Would you want a Boys Quaters? </legend>
+        <input type="radio" name="bq-or-no-bq" id="yes" value="yes">
+        <label for="yes" class="label" >Yes</label><br>
+        <input type="radio" name="bq-or-no-bq" id="no" value="no">
+        <label for="no" class="label">No</label><br><br>
+          
+        <legend class="label">What services do you require?</legend>      
+          <input type="checkbox" id="survey" name="service_required" value="survey">
+          <label for="survey" class="label">Survey</label><br> 
+          <input type="checkbox" id="architecture-design" name="service_required" value="architecture-design">
+          <label for="architecture-design" class="label">Architecture Design</label><br> 
+          <input type="checkbox" id="Electrical Drawings" name="service_required" value="electrical-drawings">
+          <label for="Electrical Drawings" class="label">Electrical Drawings</label><br> 
+          <input type="checkbox" id="m&e-drawings" name="service_required" value="m&e-drawings">
+          <label for="m&e-drawings" class="label">M&E drawings</label><br> 
+          <input type="checkbox" id="site-supervision" name="service_required" value="site-supervision">
+          <label for="site-supervision" class="label">Site Supervision</label><br> 
+          <input type="checkbox" id="construction" name="service_required" value="construction">
+          <label for="construction" class="label">Construction</label><br> 
+          <input type="checkbox" id="interior-design" name="service_required" value="interior-design">
+          <label for="interior-design" class="label">Interior Design</label><br>  
+          <br>
+              
+        <label for="message" class="label">Kindly specify any important building specifications:<br>
+          <textarea id="message" name="info" rows="5" class="input-textarea"  placeholder="Additional comments"></textarea>
+        </label><br><br>
+        
+        <button id="submit" type="submit" class="button" value="Submit"><strong>Submit</strong></button>
+        
+      </form>
+      
+        
+    </div>
+  </body>
